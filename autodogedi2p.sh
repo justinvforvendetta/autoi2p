@@ -29,7 +29,7 @@ then
     apt-get update
     apt-get install i2p default-jre -y
     dpkg-reconfigure i2p
-    if [[ -f $HOME/.i2p/i2ptunnel.config ]] 
+    if [[ -f /usr/share/i2p/i2ptunnel.config ]] 
     then
     mv /usr/share/i2p/i2ptunnel.config /usr/share/i2p/i2ptunnel.config.bak
     cp $path/i2ptunnel.config /usr/share/i2p/i2ptunnel.config
